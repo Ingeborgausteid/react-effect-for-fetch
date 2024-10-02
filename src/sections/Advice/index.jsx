@@ -37,7 +37,7 @@ function AdviceSection() {
         adviceSlip={adviceData}
       />
 
-      <section className="favourtite-slips-list">
+      <section className="favourite-slips-list">
         <h3>Favourite Advice Slips</h3>
         <FavouriteSlipsList favourites={favourites} />
       </section>
