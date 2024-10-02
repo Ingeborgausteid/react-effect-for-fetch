@@ -15,7 +15,6 @@ function UsersSection() {
     fetchData();
   }, []);
 
-  console.log(userData)
   return (
     <section>
       <h2>Users Section</h2>
