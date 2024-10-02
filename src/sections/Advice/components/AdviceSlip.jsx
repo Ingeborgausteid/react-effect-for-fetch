@@ -10,4 +10,4 @@ function AdviceSlip({ onSave, onGetMore, adviceSlip: { slip } }) {
   );
 }
 
-export default AdviceSlip;
+export default AdviceSlip

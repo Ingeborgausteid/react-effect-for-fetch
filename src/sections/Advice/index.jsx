@@ -3,15 +3,14 @@ import AdviceSlip from "./components/AdviceSlip";
 import FavouriteSlipsList from "./components/FavouriteSlipsList";
 
 function AdviceSection() {
-  const url = `https://api.adviceslip.com/advice`;
+  const url = "https://api.adviceslip.com/advice";
   const [adviceData, setAdviceData] = useState([]);
   const [favourites, setFavourites] = useState([]);
 
   const fetchData = async () => {
     const response = await fetch(url)
     const jsonData = await response.json()
-    setAdviceData(jsonData);
-    console.log(jsonData);
+    setAdviceData(jsonData)
   }
 
   useEffect(() => {
@@ -30,13 +29,11 @@ function AdviceSection() {
   return (
     <section>
       <h2>Advice Section</h2>
-
       <AdviceSlip
         onSave={handleSave}
         onGetMore={handleGetMore}
         adviceSlip={adviceData}
       />
-
       <section className="favourite-slips-list">
         <h3>Favourite Advice Slips</h3>
         <FavouriteSlipsList favourites={favourites} />
